@@ -1,0 +1,32 @@
+.navbar ul{
+	list-style-type: none;
+	background-color: #7b7272;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.navbar a{
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	margin: 0 15px;
+	display: block;
+	text-align: center;
+	justify-content: center;
+}
+
+.navbar a:hover{
+	background-color: black;
+}
+
+.navbar li{
+	float: left;
+}
+
+.logo{
+	height: auto;
+	width: auto;
+	max-height: 65px;
+	max-width: 65px;
+}

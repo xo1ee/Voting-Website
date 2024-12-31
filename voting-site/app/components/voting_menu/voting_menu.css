@@ -1,0 +1,10 @@
+.voting__menu{
+	position: center;
+	background-color: black;
+	margin-left: 20px;
+	margin-right: 800px;
+}
+
+option{
+	background-color:#080707;
+}
