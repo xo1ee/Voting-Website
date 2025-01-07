@@ -1,18 +1,19 @@
 "use client";
-import React from "react";
-import Navbar from "./components/navigation_bar/navbar";
-import VotingMenu from "./components/voting_menu/voting_menu";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function Home() {
+import Home from "./pages/home"
+import Voting from "./pages/voting"
+import AboutUs from "./pages/about_us"
+
+
+export default function App() {
   return (
-    <div>
-      {/* Creates the title */}
-      <header className="header">
-        <Navbar />
-        <h1 className="header__text">Vietnamese Student Association (VSA)</h1>
-      </header>
-
-      <VotingMenu />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Voting" element={<Voting />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
 }

@@ -104,11 +104,11 @@ export default function VotingMenu({
     positions.map((pos, index) => {
       console.log(
         "index " +
-          index +
-          " " +
-          pos.position +
-          " " +
-          selectedCandidates[pos.position]
+        index +
+        " " +
+        pos.position +
+        " " +
+        selectedCandidates[pos.position]
       );
     });
   };

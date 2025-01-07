@@ -42,7 +42,7 @@ body {
     background-attachment: fixed;
 }
 
-.header__text{
+.header_text{
   position: absolute;
   left: 50%;
   top: 30%;
