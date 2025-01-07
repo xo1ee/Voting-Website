@@ -33,7 +33,7 @@ function DisplayCandidates({
 
 function DisplayPositions({
   positions = [],
-  selectedCandidates,
+  selectedCandidates = {},
   onSelect,
 }: {
   positions?: { position: string; candidates: string[] }[];
@@ -52,7 +52,7 @@ function DisplayPositions({
             candidates={pos.candidates}
             selected={selectedCandidates[pos.position] || ""}
             onChange={onSelect}
-          />
+          ></DisplayCandidates>
         </li>
       ))}
     </ul>
@@ -71,9 +71,9 @@ export default function VotingMenu({
     },
   ],
 }: {
-  positions: { position: string; candidates: string[] }[];
+  positions?: { position: string; candidates: string[] }[];
 }) {
-  const [tempVoteCount, setTempVoteCount] = useState(0); // TEMPORARY. stores the count of votes
+  const [tempVoteCount, setTempVoteCount] = useState(0); // stores total count of votes
   const [selectedCandidates, setSelectedCandidates] = useState<
     Record<string, string>
   >({});
