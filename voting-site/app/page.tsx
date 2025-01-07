@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Navbar from "./components/navigation_bar/navbar"
-import VotingMenu from "./components/voting_menu/voting_menu"
+import Navbar from "./components/navigation_bar/navbar";
+import VotingMenu from "./components/voting_menu/voting_menu";
 
 export default function Home() {
   return (
-		<div>
+    <div>
       {/* Creates the title */}
       <header className="header">
         <Navbar />
@@ -14,5 +14,5 @@ export default function Home() {
 
       <VotingMenu />
     </div>
-	);
+  );
 }
