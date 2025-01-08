@@ -6,7 +6,9 @@ export default function Home() {
 			{/* Creates the title */}
 			<header className="header">
 				<Navbar />
-				<h1 className="header_text">Vietnamese Student Association (VSA)</h1>
+				<h1 className="text-5xl font-bold absolute left-1/2 top-[35%] transform -translate-x-1/2 text-center"
+					>Vietnamese Student Association (VSA)
+				</h1>
 			</header>
 		</div>
 	);

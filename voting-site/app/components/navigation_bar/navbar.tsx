@@ -3,8 +3,6 @@ import Image from "next/image";
 import vsa_logo from "../../assets/vsa-logo.webp";
 import "./navbar.css";
 
-// import Home from "../../pages/home";
-
 export default function Navbar() {
 	return (
 		<nav className="navbar">
