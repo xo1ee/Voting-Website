@@ -1,19 +1,15 @@
-"use client";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-
-import Home from "./pages/home"
-import Voting from "./pages/voting"
-import AboutUs from "./pages/about_us"
-
+import Navbar from "./components/navigation_bar/navbar";
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Voting" element={<Voting />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-      </Routes>
-    </Router>
+    <div>
+      {/* Creates the title */}
+      <header className="header">
+        <Navbar />
+        <h1 className="text-5xl font-bold absolute left-1/2 top-[35%] transform -translate-x-1/2 text-center">
+          Vietnamese Student Association (VSA)
+        </h1>
+      </header>
+    </div>
   );
 }
