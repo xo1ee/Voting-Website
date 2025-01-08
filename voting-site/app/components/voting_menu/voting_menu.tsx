@@ -1,5 +1,5 @@
+"use client"
 import React, { useState } from "react";
-import "./voting_menu.css";
 
 function DisplayCandidates({
   position = "Default Position",
@@ -19,6 +19,7 @@ function DisplayCandidates({
         name="candidates"
         value={selected}
         onChange={(e) => onChange(position, e.target.value)}
+        className="bg-gray-100 border border-gray-300 text-black font-2xl rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
       >
         <option value="default">Choose An Option</option>
         {candidates.map((candidate, index) => (
@@ -114,7 +115,7 @@ export default function VotingMenu({
   };
 
   return (
-    <div className="voting__menu">
+    <div className="text-2xl bg-black text-white text-nowrap absolute left-1/2 top-[30%] transform -translate-x-1/2 space-y-4 p-4 rounded-md shadow-lg">
       <p>There are multiple positions you can choose candidates for.</p>
       <DisplayPositions
         positions={positions}
@@ -122,9 +123,13 @@ export default function VotingMenu({
         onSelect={HandleSelection}
       ></DisplayPositions>
 
-      <button onClick={() => HandleSubmit()}>
-        Submit: Vote Count = {tempVoteCount}
+      <button
+        onClick={() => HandleSubmit()}
+        className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+      >
+        Submit
       </button>
+      <p>Vote Count = {tempVoteCount}</p>
     </div>
   );
 }

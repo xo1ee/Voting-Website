@@ -1,18 +1,15 @@
-"use client";
-import React from "react";
 import Navbar from "./components/navigation_bar/navbar";
-import VotingMenu from "./components/voting_menu/voting_menu";
 
-export default function Home() {
+export default function App() {
   return (
     <div>
       {/* Creates the title */}
       <header className="header">
         <Navbar />
-        <h1 className="header__text">Vietnamese Student Association (VSA)</h1>
+        <h1 className="text-5xl font-bold absolute left-1/2 top-[35%] transform -translate-x-1/2 text-center">
+          Vietnamese Student Association (VSA)
+        </h1>
       </header>
-
-      <VotingMenu />
     </div>
   );
 }
