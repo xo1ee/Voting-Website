@@ -18,6 +18,8 @@ app.UseHttpsRedirection();
 
 var mockRepo = new MockVotingRepository();
 mockRepo.PrintPositions();
+await mockRepo.AddVoteAsync(21);
+mockRepo.PrintPositions();
 
 // var summaries = new[]
 // {
