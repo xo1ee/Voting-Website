@@ -1,0 +1,26 @@
+[
+	{
+		"Id": 1,
+		"Title": "President",
+		"Candidates": [
+			{"Id": 11, "Name": "Jane Doe", "Votes": 0},
+			{"Id": 12, "Name": "John Doe", "Votes": 0}
+		]
+	},
+	{
+		"Id": 2,
+		"Title": "Vice-President",
+		"Candidates": [
+			{"Id": 21, "Name": "Megan Lin", "Votes": 0},
+			{"Id": 22, "Name": "Morgan Lin", "Votes": 0}
+		]
+	},
+	{
+		"Id": 3,
+		"Title": "Testing Position 3",
+		"Candidates": [
+			{"Id": 31, "Name": "Candidate 1", "Votes": 0},
+			{"Id": 32, "Name": "Candidate 2", "Votes": 0}
+		]
+	}
+]
